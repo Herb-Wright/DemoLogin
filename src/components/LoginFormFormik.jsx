@@ -59,16 +59,6 @@ height: 55px;
 
 `
 
-const validate = (values) => {
-    const errors = {};
-    if(values.password.length() < 8) {
-        alert(1);
-        errors.password = "The password must be at least 8 characters long";
-    }
-    return errors;
-}
-
-
 function LoginFormFormik() {
     const [loginError, setLoginError] = useState("");
     const navigate = useNavigate();    
